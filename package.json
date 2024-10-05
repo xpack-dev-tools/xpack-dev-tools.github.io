@@ -1,0 +1,27 @@
+{
+  "name": "xpack-dev-tools.github.io",
+  "version": "0.0.0-0",
+  "description": "The project web site root",
+  "main": "",
+  "scripts": {
+    "postversion": "git push origin --all && git push origin --tags",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xpack-dev-tools/xpack-dev-tools.github.io.git/"
+  },
+  "bugs": {
+    "url": "https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/issues/"
+  },
+  "homepage": "https://xpack-dev-tools.github.io",
+  "keywords": [
+    "www"
+  ],
+  "author": {
+    "name": "Liviu Ionescu",
+    "email": "ilg@livius.net",
+    "url": "https://github.com/ilg-ul/"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,30 @@
+
+{/* ------------------------------------------------------------------------ */}
+
+The roots of the **xPack Binary Development Tools** can be traced back to
+2014 in the **GNU Arm Eclipse** plug-ins,
+which were later rebranded as **GNU MCU Eclipse** plug-ins and are now
+integrated into the [Eclipse Embedded CDT](https://eclipse-embed-cdt.github.io).
+
+The first binary package provided the missing `make` and `rm` on Windows.
+Later the **GNU Arm Embedded GCC** toolchain, **OpenOCD**,
+**QEMU** and **GNU RISC-V Embedded GCC** toolchain were added
+(first published on `npmjs.com` as
+[`@gnu-mcu-eclipse/arm-none-eabi-gcc`](https://www.npmjs.com/package/@gnu-mcu-eclipse/arm-none-eabi-gcc)).
+
+In 2019 the **xpm** project was enhanced to support binary packages,
+and the projects were migrated to binary xPacks.
+
+To maintain consistency with the rest of the xPack project,
+the **npm** scope for publishing the **xPack Binary Development Tools**
+was changed from `@gnu-mcu-eclipse` to `@xpack-dev-tools`.
+
+In 2022 the **xPack Binary Development Tools** projects received a
+significant update by transitioning the build
+scripts from the cumbersome monolithic XBB Docker images to the more
+flexible and modular xPacks. XBB version
+[5.0.0](https://xpack.github.io/blog/2023/02/07/xbb-v5.0.0-released/)
+marked a major milestone for the xPack project, as it was the first
+self-sustained release. This version enabled the creation of new
+binary xPacks using existing binary xPacks, eliminating the need for
+custom Docker images or other compiled tools.
