@@ -40,7 +40,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="A binary xPack with the Binary Development Tools executables">
+      description="A collection of binary xPacks with development tools">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
