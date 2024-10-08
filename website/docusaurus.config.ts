@@ -230,20 +230,14 @@ const config: Config = {
           position: 'left'
         },
         {
-          type: 'dropdown',
-          label: 'Documentation',
+          label: 'Getting Started',
           to: 'docs/getting-started',
           position: 'left',
-          items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/getting-started'
-            },
-            {
-              label: 'About',
-              to: '/docs/about'
-            }
-          ]
+        },
+        {
+          label: 'About',
+          to: 'docs/about',
+          position: 'left',
         },
         {
           type: 'dropdown',
