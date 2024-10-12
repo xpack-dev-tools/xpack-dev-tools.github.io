@@ -24,3 +24,9 @@ curl --verbose -i -X POST -H 'Content-Type: application/json; charset=utf-8' -d 
 ## libhunt.com
 
 - https://www.libhunt.com/search?query=xpack
+
+## ahrefs.com
+
+Connect with Google account.
+
+- https://app.ahrefs.com/
