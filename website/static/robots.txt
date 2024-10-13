@@ -23,14 +23,10 @@ Sitemap: https://xpack-dev-tools.github.io/sed-xpack/sitemap.xml
 Sitemap: https://xpack-dev-tools.github.io/wine-xpack/sitemap.xml
 
 User-agent: *
-Disallow: /img/
-Disallow: /assets/
 Disallow: /blog/archive/
 Disallow: /blog/authors/
 Disallow: /blog/page/
 Disallow: /blog/tags/
-Disallow: */img/
-Disallow: */assets/
 Disallow: */blog/archive/
 Disallow: */blog/authors/
 Disallow: */blog/page/
