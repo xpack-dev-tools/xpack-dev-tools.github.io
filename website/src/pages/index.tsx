@@ -39,7 +39,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout 
-      title={`Hello from ${siteConfig.organizationName}`}
+      title={`Welcome to ${siteConfig.organizationName}`}
       description="A collection of binary packages with development tools">
       <HomepageHeader />
       <main>
