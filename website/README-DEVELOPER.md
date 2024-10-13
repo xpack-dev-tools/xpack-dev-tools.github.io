@@ -30,3 +30,7 @@ curl --verbose -i -X POST -H 'Content-Type: application/json; charset=utf-8' -d 
 Connect with Google account.
 
 - https://app.ahrefs.com/
+
+## toolsaday.com
+
+- https://toolsaday.com/seo/link-checker
