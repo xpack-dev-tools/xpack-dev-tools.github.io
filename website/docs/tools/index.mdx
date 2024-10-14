@@ -34,8 +34,8 @@ can benefit as well.
 The core tools are the toolchains. There are two Arm Embedded GCC toolchains,
 one for 32-bit devices (`arm-none-eabi-gcc`) and one for 64-bit devices
 (`aarch64-none-elf-gcc`). The second supported embedded architecture is
-RISC-V, with the `riscv-none-elf-gcc` toolchain that supports both 32 and
-64-bit devices.
+RISC-V, with the `riscv-none-elf-gcc` toolchain that generates both 32 and
+64-bit executables.
 
 For native builds, the two main toolchains (`gcc` and `clang`) are supported.
 
@@ -55,13 +55,13 @@ To test the Arm and RISC-V executables, the `qemu-system-arm`,
 ### OpenOCD
 
 To flash and debug bare metal boards, the `openocd` on-chip debugger
-in incuded.
+is incuded.
 
 ## Supplementary tools
 
 The **supplementary tools** were needed to build the main tools.
 Since these tools are exclusively
-built on macOS and GNU/Linux, to reduce maintenance efforts, for now
+built on macOS and GNU/Linux, to reduce maintenance efforts, currently
 there are no Windows binaries. However, the projects are versatile and can be
 used in any builds; if necessary, Windows binaries can be added in future
 releases.
@@ -77,10 +77,10 @@ Some projects are not yet production ready, and need some more work.
 
 ### The xPack Build Box
 
-For reproducibility, the GNU/Linux builds, that are also used
+For reproducibility, the GNU/Linux builds, also used
 to build the Windows binaries, are based on several Docker images.
 
-The scripts to create these Docker images are stored in a separate project.
+The scripts to create these Docker images are hosted in a separate project.
 
 - [`xbb`](https://github.com/xpack-dev-tools/xbb)
 
