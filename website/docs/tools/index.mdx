@@ -1,0 +1,93 @@
+---
+title: The xPack Binary Development Tools
+description: The list of binary tools.
+keywords:
+  - xpack
+  - xpack-dev-tools.github.io
+  - tools
+  - main
+  - supplementary
+
+date: 2024-10-14 12:32:00 +0300
+
+---
+
+<head><title>{frontMatter.title}</title></head>
+<head><meta property="og:title" content={frontMatter.title}/></head>
+
+import customField from '@site/src/libs/customField';
+
+{/* ------------------------------------------------------------------------ */}
+
+# {frontMatter.title}
+
+There are several tools, grouped by their expected use.
+
+## Main tools
+
+The intended use case for the **main tools** is building and testing **C/C++
+projects**, with an emphasis on **embedded projects**, but native projects
+can benefit as well.
+
+### Toolchains
+
+The core tools are the toolchains. There are two Arm Embedded GCC toolchains,
+one for 32-bit devices (`arm-none-eabi-gcc`) and one for 64-bit devices
+(`aarch64-none-elf-gcc`). The second supported embedded architecture is
+RISC-V, with the `riscv-none-elf-gcc` toolchain that supports both 32 and
+64-bit devices.
+
+For native builds, the two main toolchains (`gcc` and `clang`) are supported.
+
+To cross-build Windows projects, the `mingw-w64-gcc` toolchain is included.
+
+### Build tools
+
+The main system build generators (`cmake` and `meson`) are supported.
+
+As a modern replacement to make, the `ninja` small build system is included.
+
+### Emulators
+
+To test the Arm and RISC-V executables, the `qemu-system-arm`,
+`qemu-system-aarch64` and `qemu-system-riscv` emulators are supported.
+
+### OpenOCD
+
+To flash and debug bare metal boards, the `openocd` on-chip debugger
+in incuded.
+
+## Supplementary tools
+
+The **supplementary tools** were needed to build the main tools.
+Since these tools are exclusively
+built on macOS and GNU/Linux, to reduce maintenance efforts, for now
+there are no Windows binaries. However, the projects are versatile and can be
+used in any builds; if necessary, Windows binaries can be added in future
+releases.
+
+The `bison`, `flex`, `m4`, `patchelf`, `pkg-config`, `realpath`, `sed`,
+`wine` are provided.
+
+## Work in progress
+
+Some projects are not yet production ready, and need some more work.
+
+## Common internal projects
+
+### The xPack Build Box
+
+For reproducibility, the GNU/Linux builds, that are also used
+to build the Windows binaries, are based on several Docker images.
+
+The scripts to create these Docker images are stored in a separate project.
+
+- [`xbb`](https://github.com/xpack-dev-tools/xbb)
+
+### The xPack Build Box Helper
+
+The build procedures for all projects have many things
+in common; to avoid code duplication, the common scripts and
+other resources were grouped in a helper project.
+
+- [`xbb-helper`](https://github.com/xpack-dev-tools/xbb-helper-xpack)
