@@ -15,13 +15,15 @@ tags:
 
 ---
 
-<head><title>{frontMatter.title}</title></head>
+import {PageMetadata} from '@docusaurus/theme-common';
 
 In October 2024, after some experimentation with modern site generators,
 each project in the **xPack Binary Development Tools** collection now
 has its own dedicated website.
 
 <!--truncate-->
+
+<PageMetadata title={frontMatter.seo_title} />
 
 In addition, the collection itself
 features a central site that serves as a table of contents, listing
