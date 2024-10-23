@@ -15,10 +15,6 @@ import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import fs from 'node:fs';
 
-
-import addToolsToSidebar from './src/libs/addToolsToSidebar';
-
-
 // ----------------------------------------------------------------------------
 
 function getCustomFields() {
@@ -86,10 +82,6 @@ function getCustomFields() {
 
 const customFields = getCustomFields();
 logger.info(customFields);
-
-
-addToolsToSidebar();
-
 
 // ----------------------------------------------------------------------------
 
