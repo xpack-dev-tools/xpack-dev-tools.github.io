@@ -135,7 +135,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/edit/xpack/website/',
           showLastUpdateTime: true,
           blogSidebarCount: 8,
           authorsMapPath: '../authors.yml',
@@ -266,7 +266,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'xpack, binary, development, tools'
+        content: 'xpack, binary, development, tools, reproducibility'
       }
     ],
     navbar: {
