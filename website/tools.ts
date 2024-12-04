@@ -10,7 +10,6 @@
  */
 
 const tools = {
-    /* When updated, don't forget to add sitemap to robots.txt! */
     mainTools: [
         {
             appName: 'GNU AArch64 Embedded GCC',
