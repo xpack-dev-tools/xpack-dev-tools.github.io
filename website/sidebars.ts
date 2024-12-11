@@ -30,9 +30,40 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'doc',
+      id: 'install/index',
+      label: 'Install Guides'
+    },
+    {
+      type: 'doc',
+      id: 'user/index',
+      label: 'User\'s Guides'
+    },
+    {
+      type: 'category',
+      label: 'Contributor\'s Guides',
+      link: {
+        type: 'doc',
+        id: 'developer/index',
+      },
+      items: [
+        {
+          type: 'doc',
+          id: 'developer/install/prerequisites/index',
+          label: 'Build Prerequisites'
+        }
+      ]
+    },
+    {
+      type: 'doc',
+      id: 'maintainer/index',
+      label: 'Maintainer\'s Guides'
+    },
+    
+    {
+      type: 'doc',
       id: 'about/index',
       label: 'About'
-    },
+    }
   ],
   toolsSidebar,
 };

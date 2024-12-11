@@ -7,7 +7,7 @@
   "xpack": {
     "minimumXpmRequired": "0.16.3",
     "devDependencies": {
-      "@xpack-dev-tools/xbb-helper": "^3.0.16"
+      "@xpack-dev-tools/xbb-helper": "^3.0.17"
     },
     "properties": {
       "appName": "Binary Development Tools",
@@ -16,7 +16,11 @@
         "isOrganizationWeb": "true",
         "docusaurusTagline": "Cross-platform binary tools for software development, aimed at reproducible builds",
         "docusaurusBaseUrl": "/",
-        "gitHubProjectName": "xpack-dev-tools.github.io"
+        "gitHubProjectName": "xpack-dev-tools.github.io",
+        "hasCustomDeveloper": "true",
+        "hasCustomInstall": "true",
+        "hasCustomMaintainer": "true",
+        "hasCustomUser": "true"
       },
       "xpm-version": "0.18.0",
       "xpm-install-loglevel": "info",
