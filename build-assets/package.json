@@ -20,7 +20,8 @@
         "hasCustomDeveloper": "true",
         "hasCustomInstall": "true",
         "hasCustomMaintainer": "true",
-        "hasCustomUser": "true"
+        "hasCustomUser": "true",
+        "usePluralGuides": "true"
       },
       "xpm-version": "0.18.0",
       "xpm-install-loglevel": "info",
