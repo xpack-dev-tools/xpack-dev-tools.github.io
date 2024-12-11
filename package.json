@@ -12,7 +12,7 @@
     "url": "git+https://github.com/xpack-dev-tools/xpack-dev-tools.github.io.git/"
   },
   "bugs": {
-    "url": "https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/issues/"
+    "url": "https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/issues"
   },
   "homepage": "https://xpack-dev-tools.github.io",
   "keywords": [
@@ -21,7 +21,7 @@
   "author": {
     "name": "Liviu Ionescu",
     "email": "ilg@livius.net",
-    "url": "https://github.com/ilg-ul/"
+    "url": "https://github.com/ilg-ul"
   },
   "license": "MIT"
 }
