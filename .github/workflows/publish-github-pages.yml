@@ -46,11 +46,12 @@ concurrency:
 
 jobs:
   # Single deploy job since we're just deploying
+  # https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners#standard-github-hosted-runners-for-public-repositories
   deploy:
     environment:
       name: github-pages
       url: ${{steps.deployment.outputs.page_url}}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout
@@ -70,10 +71,7 @@ jobs:
         run: npm install -C website
 
       - name: Generate Docusaurus
-        run: |
-          cat website/docusaurus.config.ts
-          npm run build -C website
-          cat website/build/index.html
+        run: npm run build -C website
 
       - name: Setup Pages
         # https://github.com/actions/configure-pages
