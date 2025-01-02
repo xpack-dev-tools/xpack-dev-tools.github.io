@@ -103,7 +103,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'xpack-dev-tools', // Usually your GitHub org/user name.
-  projectName: 'xpack-dev-tools.github.io', // Usually your repo name.
+  projectName: 'xpack-dev-tools.github.io-xpack', // Usually your repo name.
 
   onBrokenAnchors: 'throw',
   onBrokenLinks: 'throw',
@@ -132,7 +132,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/edit/xpack/website/',
+            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/edit/xpack/website/',
           // showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -141,7 +141,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/edit/xpack/website/',
+            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/edit/xpack/website/',
           showLastUpdateTime: true,
           blogSidebarCount: 8,
           authorsMapPath: '../authors.yml',
@@ -301,20 +301,30 @@ const config: Config = {
           ]
         },
         {
-          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/',
+          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
         },
         {
-          href: 'https://github.com/xpack-dev-tools/',
-          label: 'xpack-dev-tools',
+          type: 'dropdown',
+          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
           position: 'right',
-        },
-        {
-          href: 'https://github.com/xpack/',
-          label: 'xpack',
-          position: 'right',
+          label: 'GitHub',
+          items: [
+            {
+              label: `xpack-dev-tools.github.io-xpack`,
+              href: `https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/`,
+            },
+            {
+              label: 'xpack-dev-tools org',
+              href: 'https://github.com/xpack-dev-tools/',
+            },
+            {
+              label: 'xpack org',
+              href: 'https://github.com/xpack/',
+            },
+          ]
         },
       ],
     },
@@ -343,7 +353,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Discussions',
-              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/discussions',
+              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/discussions',
             },
             {
               label: 'Stack Overflow',
@@ -367,15 +377,15 @@ const config: Config = {
               href: 'https://www.paypal.com/donate/?hosted_button_id=5MFRG9ZRBETQ8',
             },
             {
-              label: 'GitHub xpack-dev-tools.github.io',
-              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/',
+              label: 'GitHub xpack-dev-tools.github.io-xpack',
+              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
             },
             {
-              label: 'GitHub xpack-dev-tools',
+              label: 'GitHub xpack-dev-tools org',
               href: 'https://github.com/xpack-dev-tools/',
             },
             {
-              label: 'GitHub xpack',
+              label: 'GitHub xpack org',
               href: 'https://github.com/xpack/',
             },
           ],
