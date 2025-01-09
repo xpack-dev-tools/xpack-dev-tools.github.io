@@ -265,7 +265,7 @@ const config: Config = {
           position: 'left'
         },
         {
-          label: 'Getting Started',
+          label: 'Documentation',
           to: 'docs/getting-started',
           position: 'left',
         },
