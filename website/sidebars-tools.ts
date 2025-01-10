@@ -18,7 +18,7 @@ function itemsOf(tools) {
     return {
       type: 'link',
       label: tool.appName,
-      href: 'https://xpack-dev-tools.github.io/' + tool.appLcName + '-xpack',
+      href: 'https://xpack-dev-tools.github.io/' + tool.appLcName + '-xpack/',
     }
   })
 }
