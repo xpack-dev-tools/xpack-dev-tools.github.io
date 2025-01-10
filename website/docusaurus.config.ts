@@ -250,8 +250,7 @@ const config: Config = {
       }
     ],
     navbar: {
-      // Overriden by i18n/en/docusaurus-theme-classic.
-      title: 'The xPack Binary Development Tools',
+      title: 'The xPack Binary Tools',
 
       logo: {
         alt: 'xPack Logo',
