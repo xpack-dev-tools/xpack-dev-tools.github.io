@@ -261,6 +261,7 @@ const config: Config = {
       items: [
         {
           to: '/',
+          label: 'xpack-dev-tools',
           className: 'header-home-link',
           position: 'left'
         },
