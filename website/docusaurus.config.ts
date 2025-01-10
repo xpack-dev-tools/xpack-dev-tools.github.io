@@ -89,7 +89,8 @@ console.log('customFields: ' + util.inspect(customFields));
 // ----------------------------------------------------------------------------
 
 const config: Config = {
-  title: 'xPack Binary Development Tools',
+  title: 'xPack Binary Development Tools' +
+    ((process.env.DOCUSAURUS_IS_PREVIEW === 'true') ? ' (preview)' : ''),
   tagline: 'Cross-platform binary tools for software development, aimed at reproducible builds',
   // Explicitly set in headTags.
   // favicon: '/img/favicon.ico',
