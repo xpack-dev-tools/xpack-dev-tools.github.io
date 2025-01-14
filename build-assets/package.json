@@ -32,14 +32,14 @@
       "xpm-version": "0.18.0",
       "xpm-install-loglevel": "info",
       "dbg": "",
-      "buildFolderRelativePath": "{{ 'build' | path_join: configuration.name | to_filename | downcase }}",
-      "buildFolderRelativePathPosix": "{{ 'build' | path_posix_join: configuration.name | downcase }}",
-      "commandBashBuild": "bash {{ properties.dbg }} scripts/build.sh --target {{ configuration.name }} --build-folder {{ properties.buildFolderRelativePathPosix }}"
+      "buildFolderRelativePath": "{{'build' | path_join: configuration.name | to_filename | downcase}}",
+      "buildFolderRelativePathPosix": "{{'build' | path_posix_join: configuration.name | downcase}}",
+      "commandBashBuild": "bash {{properties.dbg}} scripts/build.sh --target {{configuration.name}} --build-folder {{properties.buildFolderRelativePathPosix}}"
     },
     "actions": {
       "deep-clean": [
         "rm -rf build xpacks node_modules package-lock.json",
-        "rm -rf ${HOME}/Work/xpack-dev-tools-build/{{ properties.appLcName }}-[0-9]*-*"
+        "rm -rf ${HOME}/Work/xpack-dev-tools-build/{{properties.appLcName}}-[0-9]*-*"
       ],
       "install": [
         "npm install",
