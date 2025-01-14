@@ -7,10 +7,8 @@
     "generate-top-commons": "bash node_modules/@xpack/npm-packages-helper/maintenance-scripts/generate-top-commons.sh --xpack-dev-tools",
     "npm-install": "npm install",
     "npm-link-helpers": "npm link @xpack/npm-packages-helper @xpack/docusaurus-template-liquid",
-    "npm-link": "npm link",
     "npm-outdated": "npm outdated",
-    "npm-update": "npm update",
-    "deep-clean": "del-cli node_modules package-lock.json"
+    "deep-clean": "del-cli node_modules package-lock.json *.tgz"
   },
   "author": {
     "name": "Liviu Ionescu",
@@ -24,19 +22,19 @@
   "bugs": {
     "url": "https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/issues"
   },
-  "homepage": "https://xpack-dev-tools.github.io",
+  "homepage": "https://xpack-dev-tools.github.io/xpack-dev-tools.github.io/",
   "homepagePreview": "https://xpack-dev-tools.github.io/web-preview/",
   "keywords": [
     "www"
   ],
   "license": "MIT",
   "dependencies": {},
+  "bundleDependencies": [],
   "devDependencies": {
     "del-cli": "^6.0.0",
     "json": "^11.0.0",
     "liquidjs": "^10.19.1"
   },
-  "bundleDependencies": [],
   "topConfig": {
     "isOrganizationWeb": "true",
     "hasTriggerPublishPreview": "true",
