@@ -56,7 +56,9 @@
       "last 5 safari version"
     ]
   },
-  "websiteConfig": {},
+  "websiteConfig": {
+    "skipInstallCommand": "true"
+  },
   "engines": {
     "node": ">=18.0"
   }
