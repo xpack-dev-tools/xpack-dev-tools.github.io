@@ -12,103 +12,103 @@
 const tools = {
     mainTools: [
         {
-            appName: 'GNU AArch64 Embedded GCC',
-            appLcName: 'aarch64-none-elf-gcc'
+            longName: 'GNU AArch64 Embedded GCC',
+            shortName: 'aarch64-none-elf-gcc'
         },
         {
-            appName: 'GNU Arm Embedded GCC',
-            appLcName: 'arm-none-eabi-gcc'
+            longName: 'GNU Arm Embedded GCC',
+            shortName: 'arm-none-eabi-gcc'
         },
         {
-            appName: 'LLVM clang',
-            appLcName: 'clang'
+            longName: 'LLVM clang',
+            shortName: 'clang'
         },
         {
-            appName: 'CMake',
-            appLcName: 'cmake'
+            longName: 'CMake',
+            shortName: 'cmake'
         },
         {
-            appName: 'GCC',
-            appLcName: 'gcc'
+            longName: 'GCC',
+            shortName: 'gcc'
         },
         {
-            appName: 'Meson Build',
-            appLcName: 'meson-build'
+            longName: 'Meson Build',
+            shortName: 'meson-build'
         },
         {
-            appName: 'MinGW-w64 GCC',
-            appLcName: 'mingw-w64-gcc'
+            longName: 'MinGW-w64 GCC',
+            shortName: 'mingw-w64-gcc'
         },
         {
-            appName: 'Ninja Build',
-            appLcName: 'ninja-build'
+            longName: 'Ninja Build',
+            shortName: 'ninja-build'
         },
         {
-            appName: 'OpenOCD',
-            appLcName: 'openocd'
+            longName: 'OpenOCD',
+            shortName: 'openocd'
         },
         {
-            appName: 'QEMU Arm',
-            appLcName: 'qemu-arm'
+            longName: 'QEMU Arm',
+            shortName: 'qemu-arm'
         },
         {
-            appName: 'QEMU RISC-V',
-            appLcName: 'qemu-riscv'
+            longName: 'QEMU RISC-V',
+            shortName: 'qemu-riscv'
         },
         {
-            appName: 'GNU RISC-V Embedded GCC',
-            appLcName: 'riscv-none-elf-gcc'
+            longName: 'GNU RISC-V Embedded GCC',
+            shortName: 'riscv-none-elf-gcc'
         },
         {
-            appName: 'Windows Build Tools',
-            appLcName: 'windows-build-tools'
+            longName: 'Windows Build Tools',
+            shortName: 'windows-build-tools'
         },
     ],
 
     /* When updated, don't forget to add sitemap to robots.txt! */
     supplementaryTools: [
         {
-            appName: 'GNU bison',
-            appLcName: 'bison'
+            longName: 'GNU bison',
+            shortName: 'bison'
         },
         {
-            appName: 'flex',
-            appLcName: 'flex'
+            longName: 'flex',
+            shortName: 'flex'
         },
         {
-            appName: 'GNU m4',
-            appLcName: 'm4'
+            longName: 'GNU m4',
+            shortName: 'm4'
         },
         {
-            appName: 'NixOS PatchELF',
-            appLcName: 'patchelf'
+            longName: 'NixOS PatchELF',
+            shortName: 'patchelf'
         },
         {
-            appName: 'pkg-config',
-            appLcName: 'pkg-config'
+            longName: 'pkg-config',
+            shortName: 'pkg-config'
         },
         {
-            appName: 'GNU realpath',
-            appLcName: 'realpath'
+            longName: 'GNU realpath',
+            shortName: 'realpath'
         },
         {
-            appName: 'GNU sed',
-            appLcName: 'sed'
+            longName: 'GNU sed',
+            shortName: 'sed'
         },
         {
-            appName: 'WineHQ',
-            appLcName: 'wine'
+            longName: 'WineHQ',
+            shortName: 'wine'
         },
     ],
 
     workInProgressTools: [
         {
-            appName: 'GNU Bash',
-            appLcName: 'bash'
+            longName: 'GNU Bash',
+            shortName: 'bash'
         },
         {
-            appName: 'GNU texinfo',
-            appLcName: 'texinfo'
+            longName: 'GNU texinfo',
+            shortName: 'texinfo'
         },
     ]
 }
