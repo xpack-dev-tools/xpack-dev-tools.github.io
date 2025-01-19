@@ -46,17 +46,16 @@ function getCustomFields() {
   // Remove the first part, up to the dash.
   const xpackSubversion = xpackVersion.replace(/^.*[-]/, '');
 
-  let rootPackageJson
+  let websitePackageJson = {}
   try {
-    const rootFilePath = path.join(path.dirname(path.dirname(pwd)), 'build-assets', 'package.json');
+    const websiteFilePath = path.join(path.dirname(path.dirname(pwd)), 'website', 'package.json');
     // console.log(filePath);
-    const rootFileContent = fs.readFileSync(rootFilePath);
-    rootPackageJson = JSON.parse(rootFileContent.toString());
+    const websiteFileContent = fs.readFileSync(websiteFilePath);
+    websitePackageJson = JSON.parse(websiteFileContent.toString());
   } catch (error) {
-    rootPackageJson = topPackageJson;
   }
 
-  const customFields = rootPackageJson?.xpack?.properties?.customFields ?? {};
+  const customFields = websitePackageJson?.websiteConfig?.customFields ?? {};
 
   let upstreamVersion
   if (customFields.hasTwoNumbersVersion === 'true' && xpackSemver.endsWith('.0')) {
@@ -89,7 +88,7 @@ console.log('customFields: ' + util.inspect(customFields));
 const config: Config = {
   title: 'xPack Binary Development Tools' +
     ((process.env.DOCUSAURUS_IS_PREVIEW === 'true') ? ' (preview)' : ''),
-  tagline: 'Cross-platform binary tools for software development, aimed at reproducible builds',
+  tagline: 'A binary distribution of Binary Development Tools',
   // Explicitly set in headTags.
   // favicon: '/img/favicon.ico',
 
@@ -98,7 +97,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: process.env.DOCUSAURUS_BASEURL ??
-    '/',
+    '/xpack-dev-tools.github.io-xpack/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -154,9 +153,9 @@ const config: Config = {
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: [
-            '/blog/archive/**',
-            '/blog/authors/**',
-            '/blog/tags/**'
+            '/xpack-dev-tools.github.io-xpack/blog/archive/**',
+            '/xpack-dev-tools.github.io-xpack/blog/authors/**',
+            '/xpack-dev-tools.github.io-xpack/blog/tags/**'
           ],
           filename: 'sitemap.xml',
         },
@@ -243,7 +242,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'xpack, binary, development, tools, reproducibility'
+        content: 'xpack, binary, development, tools, reproducibility, xpack-dev-tools.github.io'
       }
     ],
     navbar: {
@@ -258,25 +257,53 @@ const config: Config = {
       items: [
         {
           to: '/',
-          label: 'xpack-dev-tools',
+          label: 'xpack-dev-tools.github.io',
           className: 'header-home-link',
           position: 'left'
         },
         {
+          type: 'dropdown',
           label: 'Documentation',
           to: 'docs/getting-started',
           position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          label: 'Tools',
-          position: 'left',
-          sidebarId: 'toolsSidebar'
-        },
-        {
-          label: 'About',
-          to: 'docs/about',
-          position: 'left',
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started'
+            },
+            {
+              label: 'Install Guide',
+              to: '/docs/install'
+            },
+            {
+              label: 'User\'s Guide',
+              to: '/docs/user'
+            },
+            {
+              label: 'Contributor\'s Guide',
+              to: '/docs/developer'
+            },
+            {
+              label: 'Maintainer\'s Guide',
+              to: '/docs/maintainer'
+            },
+            {
+              label: 'FAQ',
+              to: '/docs/faq'
+            },
+            {
+              label: 'Help Centre',
+              to: '/docs/support'
+            },
+            {
+              label: 'Releases',
+              to: '/docs/releases'
+            },
+            {
+              label: 'About',
+              to: '/docs/about'
+            }
+          ]
         },
         {
           type: 'dropdown',
@@ -324,6 +351,11 @@ const config: Config = {
             },
           ]
         },
+        {
+          label: `${customFields.xpackVersion}`,
+          position: 'right',
+          href: `https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/releases/tag/v${customFields.xpackVersion}`,
+        },
       ],
     },
     footer: {
@@ -333,12 +365,16 @@ const config: Config = {
           title: 'Pages',
           items: [
             {
-              label: 'Getting Started',
-              to: '/docs/getting-started',
+              label: 'Install',
+              to: '/docs/install',
             },
             {
-              label: 'About',
-              to: '/docs/about',
+              label: 'Support',
+              to: '/docs/support',
+            },
+            {
+              label: 'Releases',
+              to: '/docs/releases',
             },
             {
               label: 'Blog',
