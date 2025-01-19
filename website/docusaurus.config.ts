@@ -242,7 +242,7 @@ const config: Config = {
     metadata: [
       {
         name: 'keywords',
-        content: 'xpack, binary, development, tools, reproducibility, xpack-dev-tools.github.io'
+        content: 'xpack, binary, development, tools, reproducibility'
       }
     ],
     navbar: {
@@ -257,53 +257,25 @@ const config: Config = {
       items: [
         {
           to: '/',
-          label: 'xpack-dev-tools.github.io',
+          label: 'xpack-dev-tools',
           className: 'header-home-link',
           position: 'left'
         },
         {
-          type: 'dropdown',
           label: 'Documentation',
           to: 'docs/getting-started',
           position: 'left',
-          items: [
-            {
-              label: 'Getting Started',
-              to: '/docs/getting-started'
-            },
-            {
-              label: 'Install Guide',
-              to: '/docs/install'
-            },
-            {
-              label: 'User\'s Guide',
-              to: '/docs/user'
-            },
-            {
-              label: 'Contributor\'s Guide',
-              to: '/docs/developer'
-            },
-            {
-              label: 'Maintainer\'s Guide',
-              to: '/docs/maintainer'
-            },
-            {
-              label: 'FAQ',
-              to: '/docs/faq'
-            },
-            {
-              label: 'Help Centre',
-              to: '/docs/support'
-            },
-            {
-              label: 'Releases',
-              to: '/docs/releases'
-            },
-            {
-              label: 'About',
-              to: '/docs/about'
-            }
-          ]
+        },
+        {
+          type: 'docSidebar',
+          label: 'Tools',
+          position: 'left',
+          sidebarId: 'toolsSidebar'
+        },
+        {
+          label: 'About',
+          to: 'docs/about',
+          position: 'left',
         },
         {
           type: 'dropdown',
@@ -351,11 +323,6 @@ const config: Config = {
             },
           ]
         },
-        {
-          label: `${customFields.xpackVersion}`,
-          position: 'right',
-          href: `https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/releases/tag/v${customFields.xpackVersion}`,
-        },
       ],
     },
     footer: {
@@ -365,16 +332,12 @@ const config: Config = {
           title: 'Pages',
           items: [
             {
-              label: 'Install',
-              to: '/docs/install',
+              label: 'Getting Started',
+              to: '/docs/getting-started',
             },
             {
-              label: 'Support',
-              to: '/docs/support',
-            },
-            {
-              label: 'Releases',
-              to: '/docs/releases',
+              label: 'About',
+              to: '/docs/about',
             },
             {
               label: 'Blog',
