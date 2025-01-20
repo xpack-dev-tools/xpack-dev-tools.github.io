@@ -57,13 +57,7 @@ function getCustomFields() {
 
   const customFields = websitePackageJson?.websiteConfig?.customFields ?? {};
 
-  let upstreamVersion
-  if (customFields.hasTwoNumbersVersion === 'true' && xpackSemver.endsWith('.0')) {
-    // Remove the patch number if zero (wine uses both 2 and 3 numbers).
-    upstreamVersion = xpackSemver.replace(/[.]0*$/, '');
-  } else {
-    upstreamVersion = xpackSemver;
-  }
+  let upstreamVersion = xpackSemver;
 
   return {
     version: jsonVersion,
@@ -88,7 +82,7 @@ console.log('customFields: ' + util.inspect(customFields));
 const config: Config = {
   title: 'xPack Binary Development Tools' +
     ((process.env.DOCUSAURUS_IS_PREVIEW === 'true') ? ' (preview)' : ''),
-  tagline: 'A binary distribution of Binary Development Tools',
+  tagline: 'Cross-platform binary tools for software development, aimed at reproducible builds',
   // Explicitly set in headTags.
   // favicon: '/img/favicon.ico',
 
@@ -97,12 +91,12 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: process.env.DOCUSAURUS_BASEURL ??
-    '/xpack-dev-tools.github.io-xpack/',
+    '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'xpack-dev-tools', // Usually your GitHub org/user name.
-  projectName: 'xpack-dev-tools.github.io-xpack', // Usually your repo name.
+  projectName: 'xpack-dev-tools.github.io', // Usually your repo name.
 
   onBrokenAnchors: 'throw',
   onBrokenLinks: 'throw',
@@ -131,7 +125,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/edit/xpack/website/',
+            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/edit/xpack/website/',
           // showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
@@ -140,7 +134,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/edit/xpack/website/',
+            'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/edit/xpack/website/',
           showLastUpdateTime: true,
           blogSidebarCount: 8,
         },
@@ -153,9 +147,9 @@ const config: Config = {
           changefreq: 'weekly',
           priority: 0.5,
           ignorePatterns: [
-            '/xpack-dev-tools.github.io-xpack/blog/archive/**',
-            '/xpack-dev-tools.github.io-xpack/blog/authors/**',
-            '/xpack-dev-tools.github.io-xpack/blog/tags/**'
+            '/blog/archive/**',
+            '/blog/authors/**',
+            '/blog/tags/**'
           ],
           filename: 'sitemap.xml',
         },
@@ -298,20 +292,20 @@ const config: Config = {
           ]
         },
         {
-          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
+          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
         },
         {
           type: 'dropdown',
-          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
+          href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/',
           position: 'right',
           label: 'GitHub',
           items: [
             {
-              label: `xpack-dev-tools.github.io-xpack`,
-              href: `https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/`,
+              label: `xpack-dev-tools.github.io`,
+              href: `https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/`,
             },
             {
               label: 'xpack-dev-tools org',
@@ -350,7 +344,7 @@ const config: Config = {
           items: [
             {
               label: 'GitHub Discussions',
-              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/discussions',
+              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/discussions',
             },
             {
               label: 'Stack Overflow',
@@ -374,8 +368,8 @@ const config: Config = {
               href: 'https://www.paypal.com/donate/?hosted_button_id=5MFRG9ZRBETQ8',
             },
             {
-              label: 'GitHub xpack-dev-tools.github.io-xpack',
-              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io-xpack/',
+              label: 'GitHub xpack-dev-tools.github.io',
+              href: 'https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/',
             },
             {
               label: 'GitHub xpack-dev-tools org',
