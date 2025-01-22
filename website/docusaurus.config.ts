@@ -188,7 +188,6 @@ const config: Config = {
       logo: {
         alt: 'xPack Logo',
         src: 'img/components-256.png',
-        // href: 'https://xpack.github.io/',
         href: 'https://xpack-dev-tools.github.io/'
       },
       items: [
@@ -199,20 +198,43 @@ const config: Config = {
           position: 'left'
         },
         {
+          type: 'dropdown',
           label: 'Documentation',
           to: 'docs/getting-started',
           position: 'left',
+          items: [
+            {
+              label: 'Getting Started',
+              to: '/docs/getting-started'
+            },
+            {
+              label: 'User\'s Guide',
+              to: '/docs/user'
+            },
+            {
+              label: 'Contributor\'s Guide',
+              to: '/docs/developer'
+            },
+            {
+              label: 'Maintainer\'s Guide',
+              to: '/docs/maintainer'
+            },
+            {
+              label: 'Help Centre',
+              to: '/docs/support'
+            },
+            {
+              label: 'About',
+              to: '/docs/project/about'
+            },
+          ]
         },
+        
         {
           type: 'docSidebar',
           label: 'Tools',
           position: 'left',
           sidebarId: 'toolsSidebar'
-        },
-        {
-          label: 'About',
-          to: 'docs/about',
-          position: 'left',
         },
         {
           type: 'dropdown',
@@ -274,7 +296,7 @@ const config: Config = {
             },
             {
               label: 'About',
-              to: '/docs/about',
+              to: '/docs/project/about',
             },
             {
               label: 'Blog',

@@ -25,7 +25,10 @@ export const redirects = {
     //     to: '/docs/newDoc2',
     //     from: ['/docs/oldDocFrom2019', '/docs/legacyDocFrom2016'],
     //   },
-    
+    {
+      from: '/docs/about',
+      to: '/docs/project/about',
+    },
   ],
   createRedirects(existingPath) {
     console.log(existingPath);
@@ -44,6 +47,5 @@ export const redirects = {
     //   }
     //   return undefined; // Return a falsy value: no redirect created
     //   },
-    
-}
+  }
 }
