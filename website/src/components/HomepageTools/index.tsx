@@ -30,7 +30,7 @@ function Tool({ longName, shortName }) {
         <div className="padding-top--xs">
           <Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Release" src={'https://img.shields.io/github/v/release/xpack-dev-tools/' + shortName + '-xpack?color=blue'} /></Link>
           &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Release Date" src={'https://img.shields.io/github/release-date/xpack-dev-tools/' + shortName + '-xpack?label=date&color=yellowgreen'} /></Link>
-          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Downloads (all assets, all releases)" src={'https://img.shields.io/github/downloads/xpack-dev-tools/' + shortName + '-xpack/total.svg'} /></Link>
+          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Downloads (all assets, all releases)" src={'https://img.shields.io/github/downloads/xpack-dev-tools/' + shortName + '-xpack/total'} /></Link>
           &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/'}><img alt="GitHub Repo stars" src={'https://img.shields.io/github/stars/xpack-dev-tools/' + shortName + '-xpack'} /></Link>
         </div>
       </div>
