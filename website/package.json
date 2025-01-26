@@ -64,12 +64,15 @@
   },
   "websiteConfig": {
     "skipInstallCommand": "true",
+    "skipFaq": "true",
+    "skipReleases": "true",
     "usePluralGuides": "true",
     "hasCustomInstall": "true",
     "hasCustomUser": "true",
     "hasCustomMaintainer": "true",
     "hasCustomDeveloper": "true",
     "hasCustomAbout": "true",
+    "customAboutTitle": "About the xPack Binary Development Tools",
     "docusaurusTagline": "Cross-platform binary tools for software development, aimed at reproducible builds",
     "docusaurusBaseUrl": "/"
   },
