@@ -11,7 +11,7 @@
 
 import type {SidebarConfig} from '@docusaurus/plugin-content-docs';
 
-import appTools from './tools'
+import appTools from './tools';
 
 function itemsOf(tools) {
   return tools.map((tool) => {
