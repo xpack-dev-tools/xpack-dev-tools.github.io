@@ -73,7 +73,8 @@
     "hasCustomDeveloper": "true",
     "hasCustomAbout": "true",
     "customAboutTitle": "About the xPack Binary Development Tools",
-    "docusaurusTagline": "Cross-platform binary tools for software development, aimed at reproducible builds",
+    "hasHomepageTools": "true",
+    "tagline": "Cross-platform binary tools for software development, aimed at reproducible builds",
     "docusaurusBaseUrl": "/"
   },
   "engines": {

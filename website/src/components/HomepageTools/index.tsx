@@ -1,7 +1,4 @@
 /*
- * DO NOT EDIT!
- * Automatically generated from docusaurus-template-liquid/templates/docusaurus.
- *
  * This file is part of the xPack project (http://xpack.github.io).
  * Copyright (c) 2024 Liviu Ionescu. All rights reserved.
  *
@@ -81,7 +78,7 @@ function ToolsRight() {
       <div className="text--center padding-horiz--md padding-vert--md">
         <Heading as="h2">Other</Heading>
         <div><b><Link to={'https://github.com/xpack-dev-tools/xbb-helper-xpack'}>xbb-helper</Link></b> - <b>xPack Build Helper</b></div>
-        <div><b><Link to={'https://github.com/xpack-dev-tools/xpack-build-box'}>xpack-build-box</Link></b> - <b>xPack Build Box (XBB)</b></div>
+        <div><b><Link to={'https://xpack-dev-tools.github./xpack-build-box/'}>xpack-build-box</Link></b> - <b>xPack Build Box (XBB)</b></div>
       </div>
     </div>
   );
