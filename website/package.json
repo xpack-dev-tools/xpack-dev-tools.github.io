@@ -70,6 +70,8 @@
     "skipFaq": "true",
     "skipReleases": "true",
     "usePluralGuides": "true",
+    "hasCustomGettingStarted": "true",
+    "customGettingStartedTitle": "Getting Started with the xPack Binary Development Tools",
     "hasCustomInstall": "true",
     "hasCustomUser": "true",
     "hasCustomMaintainer": "true",
