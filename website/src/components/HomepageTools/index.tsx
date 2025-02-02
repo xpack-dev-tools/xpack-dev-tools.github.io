@@ -17,12 +17,17 @@ import Link from '@docusaurus/Link';
 
 import tools from '@site/tools';
 
-function Tool({ longName, shortName }) {
+function Tool({ longName, shortName, isWindows, isMacOS, isLinux }) {
   return (
     <>
       <div className="padding-vert--sm">
         <div>
-          <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}>{shortName}</Link></b> - <b>xPack {longName}</b>
+          <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}><span className="sub-web-home-link">{shortName}</span></Link></b> - <b>xPack {longName}</b>
+          <span className="margin-left-platforms">
+            {isWindows ? (<span className="platform-windows"></span>) : (<></>)}
+            {isMacOS ? (<span className="platform-apple"></span>) : (<></>)}
+            {isLinux ? (<span className="platform-linux"></span>) : (<></>)}
+          </span>
         </div>
         <div className="padding-top--xs">
           <Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Release" src={'https://img.shields.io/github/v/release/xpack-dev-tools/' + shortName + '-xpack?color=blue'} /></Link>
@@ -35,11 +40,16 @@ function Tool({ longName, shortName }) {
   )
 }
 
-function ToolWork({ longName, shortName }) {
+function ToolWork({ longName, shortName, isWindows, isMacOS, isLinux }) {
   return (
     <>
       <div>
-        <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}>{shortName}</Link></b> - <b>xPack {longName}</b>
+        <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}><span className="sub-web-home-link">{shortName}</span></Link></b> - <b>xPack {longName}</b>
+        <span className="margin-left-platforms">
+            {isWindows ? (<span className="platform-windows"></span>) : (<></>)}
+            {isMacOS ? (<span className="platform-apple"></span>) : (<></>)}
+            {isLinux ? (<span className="platform-linux"></span>) : (<></>)}
+        </span>
       </div>
     </>
   )
@@ -77,8 +87,14 @@ function ToolsRight() {
       <hr className="hero__hr2" />
       <div className="text--center padding-horiz--md padding-vert--md">
         <Heading as="h2">Other</Heading>
-        <div><b><Link to={'https://github.com/xpack-dev-tools/xbb-helper-xpack'}>xbb-helper</Link></b> - <b>xPack Build Helper</b></div>
-        <div><b><Link to={'https://xpack-dev-tools.github./xpack-build-box/'}>xpack-build-box</Link></b> - <b>xPack Build Box (XBB)</b></div>
+        <div><b><Link to={'https://github.com/xpack-dev-tools/xbb-helper-xpack'}><span className="sub-web-github-link">xbb-helper</span></Link></b> - <b>xPack Build Helper</b></div>
+        <div><b><Link to={'https://xpack-dev-tools.github./xpack-build-box/'}><span className="sub-web-home-link">xpack-build-box</span></Link></b> - <b>xPack Build Box (XBB)</b>
+        <span className="margin-left-platforms">
+            {false ? (<span className="platform-windows"></span>) : (<></>)}
+            {false ? (<span className="platform-apple"></span>) : (<></>)}
+            {true ? (<span className="platform-linux"></span>) : (<></>)}
+        </span>
+        </div>
       </div>
     </div>
   );

@@ -13,55 +13,94 @@ const tools = {
     mainTools: [
         {
             longName: 'GNU AArch64 Embedded GCC',
-            shortName: 'aarch64-none-elf-gcc'
+            shortName: 'aarch64-none-elf-gcc',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU Arm Embedded GCC',
-            shortName: 'arm-none-eabi-gcc'
+            shortName: 'arm-none-eabi-gcc',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'LLVM clang',
-            shortName: 'clang'
+            shortName: 'clang',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'CMake',
-            shortName: 'cmake'
+            shortName: 'cmake',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GCC',
-            shortName: 'gcc'
+            shortName: 'gcc',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'Meson Build',
-            shortName: 'meson-build'
+            shortName: 'meson-build',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'MinGW-w64 GCC',
-            shortName: 'mingw-w64-gcc'
+            shortName: 'mingw-w64-gcc',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'Ninja Build',
-            shortName: 'ninja-build'
+            shortName: 'ninja-build',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'OpenOCD',
-            shortName: 'openocd'
+            shortName: 'openocd',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'QEMU Arm',
-            shortName: 'qemu-arm'
+            shortName: 'qemu-arm',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'QEMU RISC-V',
-            shortName: 'qemu-riscv'
+            shortName: 'qemu-riscv',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU RISC-V Embedded GCC',
-            shortName: 'riscv-none-elf-gcc'
+            shortName: 'riscv-none-elf-gcc',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'Windows Build Tools',
-            shortName: 'windows-build-tools'
+            shortName: 'windows-build-tools',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
     ],
 
@@ -69,46 +108,76 @@ const tools = {
     supplementaryTools: [
         {
             longName: 'GNU bison',
-            shortName: 'bison'
+            shortName: 'bison',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'flex',
-            shortName: 'flex'
+            shortName: 'flex',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU m4',
-            shortName: 'm4'
+            shortName: 'm4',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'NixOS PatchELF',
-            shortName: 'patchelf'
+            shortName: 'patchelf',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'pkg-config',
-            shortName: 'pkg-config'
+            shortName: 'pkg-config',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU realpath',
-            shortName: 'realpath'
+            shortName: 'realpath',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU sed',
-            shortName: 'sed'
+            shortName: 'sed',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'WineHQ',
-            shortName: 'wine'
+            shortName: 'wine',
+            isWindows: false,
+            isMacOS: false,
+            isLinux: true,
         },
     ],
 
     workInProgressTools: [
         {
             longName: 'GNU Bash',
-            shortName: 'bash'
+            shortName: 'bash',
+            isWindows: true,
+            isMacOS: true,
+            isLinux: true,
         },
         {
             longName: 'GNU texinfo',
-            shortName: 'texinfo'
+            shortName: 'texinfo',
+            isWindows: false,
+            isMacOS: true,
+            isLinux: true,
         },
     ]
 }
