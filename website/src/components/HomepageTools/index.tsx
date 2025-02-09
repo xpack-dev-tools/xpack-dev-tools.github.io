@@ -88,7 +88,7 @@ function ToolsRight() {
       <div className="text--center padding-horiz--md padding-vert--md">
         <Heading as="h2">Other</Heading>
         <div><b><Link to={'https://github.com/xpack-dev-tools/xbb-helper-xpack'}><span className="sub-web-github-link">xbb-helper</span></Link></b> - <b>xPack Build Helper</b></div>
-        <div><b><Link to={'https://xpack-dev-tools.github./xpack-build-box/'}><span className="sub-web-home-link">xpack-build-box</span></Link></b> - <b>xPack Build Box (XBB)</b>
+        <div><b><Link to={'https://xpack-dev-tools.github.io/xpack-build-box/'}><span className="sub-web-home-link">xpack-build-box</span></Link></b> - <b>xPack Build Box (XBB)</b>
         <span className="margin-left-platforms">
             {false ? (<span className="platform-windows"></span>) : (<></>)}
             {false ? (<span className="platform-apple"></span>) : (<></>)}
