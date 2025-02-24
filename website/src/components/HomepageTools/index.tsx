@@ -17,12 +17,12 @@ import Link from '@docusaurus/Link';
 
 import tools from '@site/tools';
 
-function Tool({ longName, shortName, isWindows, isMacOS, isLinux }) {
+function Tool({ descriptiveName, permalinkName, isWindows, isMacOS, isLinux }) {
   return (
     <>
       <div className="padding-vert--sm">
         <div>
-          <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}><span className="sub-web-home-link">{shortName}</span></Link></b> - <b>xPack {longName}</b>
+          <b><Link to={'https://xpack-dev-tools.github.io/' + permalinkName + '-xpack/'}><span className="sub-web-home-link">{permalinkName}</span></Link></b> - <b>xPack {descriptiveName}</b>
           <span className="margin-left-platforms">
             {isWindows ? (<span className="platform-windows"></span>) : (<></>)}
             {isMacOS ? (<span className="platform-apple"></span>) : (<></>)}
@@ -30,21 +30,21 @@ function Tool({ longName, shortName, isWindows, isMacOS, isLinux }) {
           </span>
         </div>
         <div className="padding-top--xs">
-          <Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Release" src={'https://img.shields.io/github/v/release/xpack-dev-tools/' + shortName + '-xpack?color=blue'} /></Link>
-          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Release Date" src={'https://img.shields.io/github/release-date/xpack-dev-tools/' + shortName + '-xpack?label=date&color=yellowgreen'} /></Link>
-          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/releases/'}><img alt="GitHub Downloads (all assets, all releases)" src={'https://img.shields.io/github/downloads/xpack-dev-tools/' + shortName + '-xpack/total'} /></Link>
-          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + shortName + '-xpack/'}><img alt="GitHub Repo stars" src={'https://img.shields.io/github/stars/xpack-dev-tools/' + shortName + '-xpack'} /></Link>
+          <Link to={'https://github.com/xpack-dev-tools/' + permalinkName + '-xpack/releases/'}><img alt="GitHub Release" src={'https://img.shields.io/github/v/release/xpack-dev-tools/' + permalinkName + '-xpack?color=blue'} /></Link>
+          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + permalinkName + '-xpack/releases/'}><img alt="GitHub Release Date" src={'https://img.shields.io/github/release-date/xpack-dev-tools/' + permalinkName + '-xpack?label=date&color=yellowgreen'} /></Link>
+          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + permalinkName + '-xpack/releases/'}><img alt="GitHub Downloads (all assets, all releases)" src={'https://img.shields.io/github/downloads/xpack-dev-tools/' + permalinkName + '-xpack/total'} /></Link>
+          &nbsp;<Link to={'https://github.com/xpack-dev-tools/' + permalinkName + '-xpack/'}><img alt="GitHub Repo stars" src={'https://img.shields.io/github/stars/xpack-dev-tools/' + permalinkName + '-xpack'} /></Link>
         </div>
       </div>
     </>
   )
 }
 
-function ToolWork({ longName, shortName, isWindows, isMacOS, isLinux }) {
+function ToolWork({ descriptiveName, permalinkName, isWindows, isMacOS, isLinux }) {
   return (
     <>
       <div>
-        <b><Link to={'https://xpack-dev-tools.github.io/' + shortName + '-xpack/'}><span className="sub-web-home-link">{shortName}</span></Link></b> - <b>xPack {longName}</b>
+        <b><Link to={'https://xpack-dev-tools.github.io/' + permalinkName + '-xpack/'}><span className="sub-web-home-link">{permalinkName}</span></Link></b> - <b>xPack {descriptiveName}</b>
         <span className="margin-left-platforms">
             {isWindows ? (<span className="platform-windows"></span>) : (<></>)}
             {isMacOS ? (<span className="platform-apple"></span>) : (<></>)}

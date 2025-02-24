@@ -17,8 +17,8 @@ function itemsOf(tools) {
   return tools.map((tool) => {
     return {
       type: 'link',
-      label: tool.longName,
-      href: 'https://xpack-dev-tools.github.io/' + tool.shortName + '-xpack/',
+      label: tool.descriptiveName,
+      href: 'https://xpack-dev-tools.github.io/' + tool.permalinkName + '-xpack/',
     }
   })
 }
