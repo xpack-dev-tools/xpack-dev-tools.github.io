@@ -36,8 +36,8 @@
     "liquidjs": "^10.19.1"
   },
   "topConfig": {
-    "longName": "Binary Development Tools",
-    "shortName": "xpack-dev-tools.github.io",
+    "descriptiveName": "Binary Development Tools",
+    "permalinkName": "xpack-dev-tools.github.io",
     "isOrganizationWeb": "true",
     "hasTriggerPublishPreview": "true",
     "hasEmptyMaster": "true"
