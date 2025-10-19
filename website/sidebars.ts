@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
     {
       type: 'doc',
       id: 'install/index',
-      label: 'Install Guides'
+      label: 'Installation Guides'
     },
     {
       type: 'doc',
@@ -79,7 +79,7 @@ const sidebars: SidebarsConfig = {
         {
           type: 'link',
           label: 'License',
-          href: 'https://opensource.org/license/MIT',
+          href: 'https://opensource.org/license/mit',
         },
       ]
     },
