@@ -54,7 +54,7 @@ available in the standard Apple distribution. If not, install it from Python
 [downloads](https://www.python.org/downloads/macos/).
 
 For development builds, the procedure can be executed on a recent macOS
-version (currently tested up to 14.6).
+version (currently tested up to 15.7).
 
 For production builds it is recommended to use a slightly older version,
 for example **macOS 10.13** is a good compromise.
@@ -138,10 +138,11 @@ images based on older
 and more conservative distributions to avoid issues when
 running the executables on older systems.
 
-**Any x86_64/aarch64/armhf GNU/Linux distribution
+**Any x86_64/aarch64 GNU/Linux distribution
 capable of running Docker should suffice**; a physical machine is not
 necessary, as virtual machines are
-perfectly adequate. For optimal results, allocate 3-4 cores and 8-12 GB of RAM.
+perfectly adequate. For optimal results, allocate 4 cores and 8-12 GB of RAM.
+GitHub self-hosted runners may require additional memory.
 
 The XBB v5.0.0 Docker images are built on **Ubuntu 18 LTS** for both
 x64 and Arm GNU/Linux, ensuring the resulting binaries can
@@ -149,23 +150,14 @@ run on any system based on **GLIBC >= 2.27**.
 
 :::info
 
-Building Arm binaries necessitates an Arm machine. A Raspberry
-Pi 4 with 8GB of RAM, paired with a Samsung Portable T7 USB 3 SSD,
-is an excellent solution. A Raspberry Pi 5 with an NVME SSD
-is even better.
-
-:::
-
-:::info
-
-Although Arm 32-bit binaries can be built inside Docker containers
-running on AArch64 machines, it is still recommended to use a 32-bit
-OS to avoid issues caused by the differences between armv7 and armv8.
+Building Arm binaries necessitates an Arm machine. 
+A Raspberry Pi 5 with an NVME SSD is an excellent solution.
 
 :::
 
 The prerequisites are:
 
+- `uname` (usually in the base system)
 - `curl` (installed via the system package manager)
 - `git` (installed via the system package manager)
 - `docker` (preferably a recent one, installed from **docker.com**)
