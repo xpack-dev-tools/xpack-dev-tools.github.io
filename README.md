@@ -1,5 +1,6 @@
 
 [![license](https://img.shields.io/github/license/xpack-dev-tools/xpack-dev-tools.github.io)](https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/blob/website/LICENSE)
+[![Website](https://img.shields.io/website?url=https%3A%2F%2Fxpack-dev-tools.github.io%2Fxpack-dev-tools.github.io%2F)](https://xpack-dev-tools.github.io/xpack-dev-tools.github.io/)
 
 # The xPack Binary Development Tools website source
 
