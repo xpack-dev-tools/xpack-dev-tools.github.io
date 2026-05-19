@@ -1,0 +1,18 @@
+{
+  "customAboutTitle": "About the xPack Binary Development Tools",
+  "customGettingStartedTitle": "Getting Started with the xPack Binary Development Tools",
+  "metadataKeywords": "xpack, binary, development, tools, reproducibility",
+  "tagline": "Cross-platform binary tools for software development, aimed at reproducible builds",
+  "hasCustomAbout": true,
+  "hasCustomDeveloper": true,
+  "hasCustomGettingStarted": true,
+  "hasCustomInstall": true,
+  "hasCustomMaintainer": true,
+  "hasCustomUser": true,
+  "hasHomepageTools": true,
+  "hasToolsSidebar": true,
+  "skipFaq": true,
+  "skipInstallCommand": true,
+  "skipReleases": true,
+  "usePluralGuides": true
+}

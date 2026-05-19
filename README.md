@@ -9,7 +9,7 @@ The Docusaurus source code for the xPack Binary Development Tools website.
 ## Project source
 
 The source code is available on
-[GitHub](https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/).
+GitHub as [xpack-dev-tools/xpack-dev-tools.github.io](https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/).
 
 ## License
 
