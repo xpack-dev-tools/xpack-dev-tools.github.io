@@ -13,7 +13,7 @@
 #
 # -----------------------------------------------------------------------------
 
-# https://xpack-dev-tools.github.io/
+# https://xpack-dev-tools.github.io/xpack-dev-tools.github.io/
 # https://github.com/xpack-dev-tools/xpack-dev-tools.github.io/actions/workflows/publish-github-pages.yml
 
 # Workflow for deploying static content to GitHub Pages.

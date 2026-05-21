@@ -39,13 +39,6 @@
     "npm-outdated": "npm outdated",
     "deep-clean": "del-cli node_modules package-lock.json *.tgz"
   },
-  "_topConfig": {
-    "descriptiveName": "Binary Development Tools",
-    "permalinkName": "xpack-dev-tools.github.io",
-    "isOrganizationWeb": "true",
-    "hasTriggerPublishPreview": "true",
-    "hasEmptyMaster": "true"
-  },
   "engines": {
     "node": ">=20.0"
   }
